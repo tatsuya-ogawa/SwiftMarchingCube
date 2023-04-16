@@ -1,0 +1,5 @@
+module SwiftMarchingCubeBridge{
+    header "shared.h"
+    export *
+}
+
