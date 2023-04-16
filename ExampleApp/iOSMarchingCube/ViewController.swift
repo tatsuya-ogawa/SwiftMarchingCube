@@ -20,7 +20,7 @@ struct ModelPoint:BunnyPointProtocol,GridInput{
     init(pos: SIMD3<Float>, normal: SIMD3<Float>, uv: SIMD2<Float>) {
         self.pos = pos
         self.normal = normal
-        self.color = SIMD4<Float>.zero
+        self.color = SIMD4<Float>(0,0,1.0,1.0)
     }
 }
 class ViewController: UIViewController {
@@ -49,6 +49,11 @@ class ViewController: UIViewController {
             
             let activityItems = [filePath]
             let activityVC = UIActivityViewController(activityItems: activityItems, applicationActivities: nil)
+            if UIDevice.current.userInterfaceIdiom == .pad {
+                let screenSize = UIScreen.main.bounds
+                activityVC.popoverPresentationController?.sourceView = self.view
+                activityVC.popoverPresentationController?.sourceRect = CGRect(x:screenSize.size.width/2, y: screenSize.size.height-200, width: 0, height: 0)
+            }
             let excludedActivityTypes = [
                 UIActivity.ActivityType.postToFacebook,
                 UIActivity.ActivityType.postToTwitter,

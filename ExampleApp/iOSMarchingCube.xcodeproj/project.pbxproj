@@ -20,7 +20,6 @@
 
 /* Begin PBXFileReference section */
 		097CBF6B29EC3FBB00A8DF80 /* SwiftMarchingCube */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftMarchingCube; path = ..; sourceTree = "<group>"; };
-		09A94FCE29EC54DD0018B28D /* iOSMarchingCube-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSMarchingCube-Bridging-Header.h"; sourceTree = "<group>"; };
 		09C0CF6D29E2F68300CA2762 /* iOSMarchingCube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSMarchingCube.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09C0CF7029E2F68300CA2762 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09C0CF7229E2F68300CA2762 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,7 +88,6 @@
 				09C0CF7B29E2F68300CA2762 /* LaunchScreen.storyboard */,
 				09C0CF7E29E2F68300CA2762 /* Info.plist */,
 				09C0CF9429E44DA000CA2762 /* Renderer.swift */,
-				09A94FCE29EC54DD0018B28D /* iOSMarchingCube-Bridging-Header.h */,
 			);
 			path = iOSMarchingCube;
 			sourceTree = "<group>";
@@ -340,7 +338,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "tatsuya-ogawa.iOSMarchingCube";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "iOSMarchingCube/iOSMarchingCube-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -371,7 +369,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "tatsuya-ogawa.iOSMarchingCube";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "iOSMarchingCube/iOSMarchingCube-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
